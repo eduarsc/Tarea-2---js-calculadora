@@ -1,22 +1,31 @@
 <html>
-    <head>
-        <title>Simple JavaScript</title>
-        <link rel="stylesheet" href="estilo.css">
-        <script src="script.js"></script>
-    </head>
-    
-    <body>
-        <h3>Mini Calculadora</h3>
-        <div class="calculadora">
-            <input type="text" name="operador1" id="op1">
-            +
-            <input type="text" name="operador2" id="op2">
-            <button onclick="calcular()">Calcular</button>
-            <div id="resultado" class="resultado">
-            </div>
+
+<head>
+    <title>Simple JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h3>Mini Calculadora</h3>
+    <div class="calculadora">
+        <input type="text" name="operador1" id="op1" value="0">
+        <select name="operacion" id="operador">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="//">//</option>
+            <option value="**">**</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" name="operador2" id="op2" value="0">
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="borrar()">Borrar</button>
+        <div id="resultado" class="resultado">
         </div>
-        
-    </body>
+    </div>
+
+</body>
+
 </html>
-    
-                                        
